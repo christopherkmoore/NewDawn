@@ -9,20 +9,26 @@
 /* Begin PBXBuildFile section */
 		4A890D1BDE5CE75E5BC76E71 /* Pods_NewDawn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8C3FC62C0E9BD77DBE0A56 /* Pods_NewDawn.framework */; };
 		7931AA0A1EA7DF0A008DA0BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AA091EA7DF0A008DA0BE /* AppDelegate.swift */; };
-		7931AA0C1EA7DF0A008DA0BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AA0B1EA7DF0A008DA0BE /* ViewController.swift */; };
+		7931AA0C1EA7DF0A008DA0BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AA0B1EA7DF0A008DA0BE /* LoginViewController.swift */; };
 		7931AA0F1EA7DF0A008DA0BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931AA0D1EA7DF0A008DA0BE /* Main.storyboard */; };
-		7931AA111EA7DF0A008DA0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7931AA101EA7DF0A008DA0BE /* Assets.xcassets */; };
 		7931AA141EA7DF0A008DA0BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931AA121EA7DF0A008DA0BE /* LaunchScreen.storyboard */; };
+		7931AA1C1EA7E6B5008DA0BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7931AA1B1EA7E6B5008DA0BE /* GoogleService-Info.plist */; };
+		7931AA1E1EA7EC25008DA0BE /* TabbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AA1D1EA7EC25008DA0BE /* TabbedViewController.swift */; };
+		7931AA201EA7F1DD008DA0BE /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AA1F1EA7F1DD008DA0BE /* NewsFeedViewController.swift */; };
+		7931AA221EA7F568008DA0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7931AA211EA7F568008DA0BE /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7931AA061EA7DF0A008DA0BE /* NewDawn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewDawn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7931AA091EA7DF0A008DA0BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7931AA0B1EA7DF0A008DA0BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7931AA0B1EA7DF0A008DA0BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7931AA0E1EA7DF0A008DA0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7931AA101EA7DF0A008DA0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7931AA131EA7DF0A008DA0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7931AA151EA7DF0A008DA0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7931AA1B1EA7E6B5008DA0BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7931AA1D1EA7EC25008DA0BE /* TabbedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbedViewController.swift; sourceTree = "<group>"; };
+		7931AA1F1EA7F1DD008DA0BE /* NewsFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		7931AA211EA7F568008DA0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5025620FA7226FAC61B9B52 /* Pods-NewDawn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewDawn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewDawn/Pods-NewDawn.debug.xcconfig"; sourceTree = "<group>"; };
 		D8B53B5324418AA0907BEFBE /* Pods-NewDawn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewDawn.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewDawn/Pods-NewDawn.release.xcconfig"; sourceTree = "<group>"; };
 		ED8C3FC62C0E9BD77DBE0A56 /* Pods_NewDawn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewDawn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,11 +85,14 @@
 			isa = PBXGroup;
 			children = (
 				7931AA091EA7DF0A008DA0BE /* AppDelegate.swift */,
-				7931AA0B1EA7DF0A008DA0BE /* ViewController.swift */,
+				7931AA0B1EA7DF0A008DA0BE /* LoginViewController.swift */,
+				7931AA1D1EA7EC25008DA0BE /* TabbedViewController.swift */,
+				7931AA1F1EA7F1DD008DA0BE /* NewsFeedViewController.swift */,
 				7931AA0D1EA7DF0A008DA0BE /* Main.storyboard */,
-				7931AA101EA7DF0A008DA0BE /* Assets.xcassets */,
+				7931AA211EA7F568008DA0BE /* Assets.xcassets */,
 				7931AA121EA7DF0A008DA0BE /* LaunchScreen.storyboard */,
 				7931AA151EA7DF0A008DA0BE /* Info.plist */,
+				7931AA1B1EA7E6B5008DA0BE /* GoogleService-Info.plist */,
 			);
 			path = NewDawn;
 			sourceTree = "<group>";
@@ -152,7 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7931AA141EA7DF0A008DA0BE /* LaunchScreen.storyboard in Resources */,
-				7931AA111EA7DF0A008DA0BE /* Assets.xcassets in Resources */,
+				7931AA1C1EA7E6B5008DA0BE /* GoogleService-Info.plist in Resources */,
+				7931AA221EA7F568008DA0BE /* Assets.xcassets in Resources */,
 				7931AA0F1EA7DF0A008DA0BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7931AA0C1EA7DF0A008DA0BE /* ViewController.swift in Sources */,
+				7931AA0C1EA7DF0A008DA0BE /* LoginViewController.swift in Sources */,
 				7931AA0A1EA7DF0A008DA0BE /* AppDelegate.swift in Sources */,
+				7931AA1E1EA7EC25008DA0BE /* TabbedViewController.swift in Sources */,
+				7931AA201EA7F1DD008DA0BE /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -341,6 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6W97WT4N63;
 				INFOPLIST_FILE = NewDawn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.NewDawn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6W97WT4N63;
 				INFOPLIST_FILE = NewDawn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.NewDawn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,6 +395,7 @@
 				7931AA1A1EA7DF0A008DA0BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

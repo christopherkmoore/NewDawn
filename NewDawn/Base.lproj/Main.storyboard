@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="NewDawn" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,256 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-palm-tree" translatesAutoresizingMaskIntoConstraints="NO" id="2Ml-FG-Z0v">
+                                <rect key="frame" x="5" y="30" width="365" height="269"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6ud-VV-3CD">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIK-AH-hLg" customClass="GIDSignInButton">
+                                <rect key="frame" x="67" y="304" width="240" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Hj7-B8-oQh"/>
+                                    <constraint firstAttribute="width" constant="240" id="IWC-1d-Vjz"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="buttonSignIn:" destination="BYZ-38-t0r" eventType="valueChanged" id="8dn-jp-Ep4"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LIK-AH-hLg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cni-cX-djy"/>
+                            <constraint firstItem="6ud-VV-3CD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DJZ-7a-50n"/>
+                            <constraint firstItem="LIK-AH-hLg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Euy-DN-L0a"/>
+                            <constraint firstItem="6ud-VV-3CD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jd6-t0-pdy"/>
+                            <constraint firstItem="LIK-AH-hLg" firstAttribute="top" secondItem="2Ml-FG-Z0v" secondAttribute="bottom" constant="5" id="PBa-LV-t5s"/>
+                            <constraint firstAttribute="trailing" secondItem="2Ml-FG-Z0v" secondAttribute="trailing" constant="5" id="Pto-2C-Ttp"/>
+                            <constraint firstItem="2Ml-FG-Z0v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="WXR-YJ-gxW"/>
+                            <constraint firstItem="2Ml-FG-Z0v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="hwc-rv-gPs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="6ud-VV-3CD" id="w8O-F9-ZOS"/>
+                        <outlet property="gidButton" destination="LIK-AH-hLg" id="Hkn-0Q-jf2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="130.88455772113943"/>
+        </scene>
+        <!--Tabbed View Controller-->
+        <scene sceneID="NMu-wU-yhR">
+            <objects>
+                <tabBarController storyboardIdentifier="TabbedViewController" id="UGG-GJ-UGz" customClass="TabbedViewController" customModule="NewDawn" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="BAn-ad-HeI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="f67-gg-lFw" kind="relationship" relationship="viewControllers" id="AfD-jC-O1l"/>
+                        <segue destination="rJ8-Uj-9pG" kind="relationship" relationship="viewControllers" id="sM5-Pn-nO9"/>
+                        <segue destination="j6c-Qu-QjO" kind="relationship" relationship="viewControllers" id="l7a-Fg-sHe"/>
+                        <segue destination="AmM-Us-MQB" kind="relationship" relationship="viewControllers" id="g1s-xV-1bi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L8h-55-VbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040" y="137"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="yie-Re-Fm5">
+            <objects>
+                <viewController title="News" id="f67-gg-lFw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ml-4j-vJi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jal-16-iaB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PID-eO-jAK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F86-lA-sHK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="News" id="VnE-PV-kcb" userLabel="News"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="29" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdh-tq-eQE">
+                                <rect key="frame" x="21" y="64" width="343" height="554"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit massa eu mauris euismod, dignissim rutrum eros convallis. Duis ornare, lacus sed aliquam semper, risus est ultricies leo, et sagittis ante quam sit amet ipsum. Nam sodales nisi at viverra congue. Duis elementum risus nisl, non ullamcorper arcu pharetra sed. Etiam id sapien non odio malesuada commodo. Maecenas lobortis nisl quis orci convallis, euismod tristique mi laoreet. Aenean vitae ligula odio.
+
+Proin convallis semper lorem ullamcorper tristique. Phasellus dapibus sapien vel ipsum lacinia bibendum. In auctor laoreet magna. Proin ultrices tellus non sem pharetra ultricies. In vitae neque sed purus pharetra elementum vitae vitae ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut lorem lacinia, bibendum metus non, finibus quam. Sed lorem dolor, fringilla vel risus faucibus, cursus facilisis turpis.
+
+Nam sapien ante, mattis ac ligula vel, semper molestie velit. Duis nibh ex, porta in tortor vel, hendrerit scelerisque dolor. Phasellus congue sapien non risus aliquet, in commodo eros efficitur. Nunc ut lacinia nunc, nec sodales lectus. Duis ut egestas neque. Pellentesque a semper nulla. Curabitur at fringilla odio, nec feugiat ante. Pellentesque sed lorem mauris. Nunc in orci at lacus tempor porta sed ut nisi. Sed sit amet leo a eros tincidunt tempor. Curabitur nisl tortor, tempus sit amet suscipit in, suscipit vel quam. Aenean suscipit, lorem et euismod hendrerit, est libero convallis sem, bibendum fringilla quam ligula in felis. Nam euismod erat eget fringilla iaculis. Duis pulvinar iaculis nibh. Etiam rutrum, orci nec scelerisque condimentum, odio purus rutrum magna, ac vestibulum nulla urna vel lacus.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mdh-tq-eQE" firstAttribute="trailing" secondItem="PID-eO-jAK" secondAttribute="trailingMargin" constant="5" id="0py-Mu-cPc"/>
+                            <constraint firstItem="Mdh-tq-eQE" firstAttribute="top" secondItem="F86-lA-sHK" secondAttribute="bottom" id="1yG-4I-aN8"/>
+                            <constraint firstItem="Jal-16-iaB" firstAttribute="top" secondItem="Mdh-tq-eQE" secondAttribute="bottom" id="6da-kQ-uE9"/>
+                            <constraint firstItem="F86-lA-sHK" firstAttribute="leading" secondItem="PID-eO-jAK" secondAttribute="leading" id="SKo-pF-h5E"/>
+                            <constraint firstAttribute="trailing" secondItem="F86-lA-sHK" secondAttribute="trailing" id="mgW-2h-CM7"/>
+                            <constraint firstItem="F86-lA-sHK" firstAttribute="top" secondItem="3ml-4j-vJi" secondAttribute="bottom" id="ruh-lg-FGQ"/>
+                            <constraint firstItem="Mdh-tq-eQE" firstAttribute="leading" secondItem="PID-eO-jAK" secondAttribute="leadingMargin" constant="5" id="vyV-iz-xo9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="News" id="eXX-lN-sUa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6f-7K-MJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2120.8000000000002" y="-259.52023988005999"/>
+        </scene>
+        <!--User Profile-->
+        <scene sceneID="iwJ-8N-NEO">
+            <objects>
+                <viewController title="User Profile" id="rJ8-Uj-9pG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ks2-Zs-LEe"/>
+                        <viewControllerLayoutGuide type="bottom" id="INM-lS-BsQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7at-oV-TmP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6T-yi-GOK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="User Profile" id="Ehi-TJ-YHy"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="29" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xos-pD-9xv">
+                                <rect key="frame" x="21" y="64" width="343" height="554"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit massa eu mauris euismod, dignissim rutrum eros convallis. Duis ornare, lacus sed aliquam semper, risus est ultricies leo, et sagittis ante quam sit amet ipsum. Nam sodales nisi at viverra congue. Duis elementum risus nisl, non ullamcorper arcu pharetra sed. Etiam id sapien non odio malesuada commodo. Maecenas lobortis nisl quis orci convallis, euismod tristique mi laoreet. Aenean vitae ligula odio.
+
+Proin convallis semper lorem ullamcorper tristique. Phasellus dapibus sapien vel ipsum lacinia bibendum. In auctor laoreet magna. Proin ultrices tellus non sem pharetra ultricies. In vitae neque sed purus pharetra elementum vitae vitae ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut lorem lacinia, bibendum metus non, finibus quam. Sed lorem dolor, fringilla vel risus faucibus, cursus facilisis turpis.
+
+Nam sapien ante, mattis ac ligula vel, semper molestie velit. Duis nibh ex, porta in tortor vel, hendrerit scelerisque dolor. Phasellus congue sapien non risus aliquet, in commodo eros efficitur. Nunc ut lacinia nunc, nec sodales lectus. Duis ut egestas neque. Pellentesque a semper nulla. Curabitur at fringilla odio, nec feugiat ante. Pellentesque sed lorem mauris. Nunc in orci at lacus tempor porta sed ut nisi. Sed sit amet leo a eros tincidunt tempor. Curabitur nisl tortor, tempus sit amet suscipit in, suscipit vel quam. Aenean suscipit, lorem et euismod hendrerit, est libero convallis sem, bibendum fringilla quam ligula in felis. Nam euismod erat eget fringilla iaculis. Duis pulvinar iaculis nibh. Etiam rutrum, orci nec scelerisque condimentum, odio purus rutrum magna, ac vestibulum nulla urna vel lacus.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="INM-lS-BsQ" firstAttribute="top" secondItem="Xos-pD-9xv" secondAttribute="bottom" id="JFY-Ru-XlL"/>
+                            <constraint firstAttribute="trailing" secondItem="o6T-yi-GOK" secondAttribute="trailing" id="K8F-dB-YfR"/>
+                            <constraint firstItem="Xos-pD-9xv" firstAttribute="trailing" secondItem="7at-oV-TmP" secondAttribute="trailingMargin" constant="5" id="Pmt-B8-Seh"/>
+                            <constraint firstItem="Xos-pD-9xv" firstAttribute="leading" secondItem="7at-oV-TmP" secondAttribute="leadingMargin" constant="5" id="VQx-6X-Tjg"/>
+                            <constraint firstItem="o6T-yi-GOK" firstAttribute="top" secondItem="Ks2-Zs-LEe" secondAttribute="bottom" id="Z1s-wb-YNS"/>
+                            <constraint firstItem="o6T-yi-GOK" firstAttribute="leading" secondItem="7at-oV-TmP" secondAttribute="leading" id="hUy-v6-B5t"/>
+                            <constraint firstItem="Xos-pD-9xv" firstAttribute="top" secondItem="o6T-yi-GOK" secondAttribute="bottom" id="zKv-Ld-cPL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="User Profile" id="9UW-0Z-DzZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCA-gy-YNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2121" y="583"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="7vO-Qs-L1I">
+            <objects>
+                <viewController title="More" id="AmM-Us-MQB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TYG-Tc-I0m"/>
+                        <viewControllerLayoutGuide type="bottom" id="pmL-nY-UCX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hbM-4y-a5j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaK-9N-ww9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="More" id="Y6T-IV-Ad5"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="29" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLN-Vh-M8G">
+                                <rect key="frame" x="21" y="64" width="343" height="554"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit massa eu mauris euismod, dignissim rutrum eros convallis. Duis ornare, lacus sed aliquam semper, risus est ultricies leo, et sagittis ante quam sit amet ipsum. Nam sodales nisi at viverra congue. Duis elementum risus nisl, non ullamcorper arcu pharetra sed. Etiam id sapien non odio malesuada commodo. Maecenas lobortis nisl quis orci convallis, euismod tristique mi laoreet. Aenean vitae ligula odio.
+
+Proin convallis semper lorem ullamcorper tristique. Phasellus dapibus sapien vel ipsum lacinia bibendum. In auctor laoreet magna. Proin ultrices tellus non sem pharetra ultricies. In vitae neque sed purus pharetra elementum vitae vitae ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut lorem lacinia, bibendum metus non, finibus quam. Sed lorem dolor, fringilla vel risus faucibus, cursus facilisis turpis.
+
+Nam sapien ante, mattis ac ligula vel, semper molestie velit. Duis nibh ex, porta in tortor vel, hendrerit scelerisque dolor. Phasellus congue sapien non risus aliquet, in commodo eros efficitur. Nunc ut lacinia nunc, nec sodales lectus. Duis ut egestas neque. Pellentesque a semper nulla. Curabitur at fringilla odio, nec feugiat ante. Pellentesque sed lorem mauris. Nunc in orci at lacus tempor porta sed ut nisi. Sed sit amet leo a eros tincidunt tempor. Curabitur nisl tortor, tempus sit amet suscipit in, suscipit vel quam. Aenean suscipit, lorem et euismod hendrerit, est libero convallis sem, bibendum fringilla quam ligula in felis. Nam euismod erat eget fringilla iaculis. Duis pulvinar iaculis nibh. Etiam rutrum, orci nec scelerisque condimentum, odio purus rutrum magna, ac vestibulum nulla urna vel lacus.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xLN-Vh-M8G" firstAttribute="leading" secondItem="hbM-4y-a5j" secondAttribute="leadingMargin" constant="5" id="107-Yk-0o0"/>
+                            <constraint firstItem="xLN-Vh-M8G" firstAttribute="trailing" secondItem="hbM-4y-a5j" secondAttribute="trailingMargin" constant="5" id="4Np-Uu-bTw"/>
+                            <constraint firstItem="xLN-Vh-M8G" firstAttribute="top" secondItem="oaK-9N-ww9" secondAttribute="bottom" id="67y-wz-tPW"/>
+                            <constraint firstItem="pmL-nY-UCX" firstAttribute="top" secondItem="xLN-Vh-M8G" secondAttribute="bottom" id="G4k-0b-eyp"/>
+                            <constraint firstItem="oaK-9N-ww9" firstAttribute="leading" secondItem="hbM-4y-a5j" secondAttribute="leading" id="ZO9-6K-57U"/>
+                            <constraint firstItem="oaK-9N-ww9" firstAttribute="top" secondItem="TYG-Tc-I0m" secondAttribute="bottom" id="Zea-OA-Gdc"/>
+                            <constraint firstAttribute="trailing" secondItem="oaK-9N-ww9" secondAttribute="trailing" id="pkP-Cl-N8V"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="Rmg-sQ-XIF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AnQ-g1-Cd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3132" y="582"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="svu-Pv-aso">
+            <objects>
+                <viewController title="Favorites" id="j6c-Qu-QjO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PLh-XJ-Aqs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tqn-hK-NxN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pOL-YU-0Uz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocW-BZ-ws6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Favorites" id="PUW-xS-dfg"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="29" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8A-EA-r40">
+                                <rect key="frame" x="21" y="64" width="343" height="554"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit massa eu mauris euismod, dignissim rutrum eros convallis. Duis ornare, lacus sed aliquam semper, risus est ultricies leo, et sagittis ante quam sit amet ipsum. Nam sodales nisi at viverra congue. Duis elementum risus nisl, non ullamcorper arcu pharetra sed. Etiam id sapien non odio malesuada commodo. Maecenas lobortis nisl quis orci convallis, euismod tristique mi laoreet. Aenean vitae ligula odio.
+
+Proin convallis semper lorem ullamcorper tristique. Phasellus dapibus sapien vel ipsum lacinia bibendum. In auctor laoreet magna. Proin ultrices tellus non sem pharetra ultricies. In vitae neque sed purus pharetra elementum vitae vitae ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut lorem lacinia, bibendum metus non, finibus quam. Sed lorem dolor, fringilla vel risus faucibus, cursus facilisis turpis.
+
+Nam sapien ante, mattis ac ligula vel, semper molestie velit. Duis nibh ex, porta in tortor vel, hendrerit scelerisque dolor. Phasellus congue sapien non risus aliquet, in commodo eros efficitur. Nunc ut lacinia nunc, nec sodales lectus. Duis ut egestas neque. Pellentesque a semper nulla. Curabitur at fringilla odio, nec feugiat ante. Pellentesque sed lorem mauris. Nunc in orci at lacus tempor porta sed ut nisi. Sed sit amet leo a eros tincidunt tempor. Curabitur nisl tortor, tempus sit amet suscipit in, suscipit vel quam. Aenean suscipit, lorem et euismod hendrerit, est libero convallis sem, bibendum fringilla quam ligula in felis. Nam euismod erat eget fringilla iaculis. Duis pulvinar iaculis nibh. Etiam rutrum, orci nec scelerisque condimentum, odio purus rutrum magna, ac vestibulum nulla urna vel lacus.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tqn-hK-NxN" firstAttribute="top" secondItem="V8A-EA-r40" secondAttribute="bottom" id="0yq-4Y-U9R"/>
+                            <constraint firstAttribute="trailing" secondItem="ocW-BZ-ws6" secondAttribute="trailing" id="Jji-fw-L9h"/>
+                            <constraint firstItem="V8A-EA-r40" firstAttribute="trailing" secondItem="pOL-YU-0Uz" secondAttribute="trailingMargin" constant="5" id="OEU-iI-EKm"/>
+                            <constraint firstItem="V8A-EA-r40" firstAttribute="top" secondItem="ocW-BZ-ws6" secondAttribute="bottom" id="SgT-mh-zub"/>
+                            <constraint firstItem="ocW-BZ-ws6" firstAttribute="leading" secondItem="pOL-YU-0Uz" secondAttribute="leading" id="nxz-Sm-Bfp"/>
+                            <constraint firstItem="ocW-BZ-ws6" firstAttribute="top" secondItem="PLh-XJ-Aqs" secondAttribute="bottom" id="oPP-9b-OoP"/>
+                            <constraint firstItem="V8A-EA-r40" firstAttribute="leading" secondItem="pOL-YU-0Uz" secondAttribute="leadingMargin" constant="5" id="tiC-WO-aGi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="3my-jK-RLX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7B3-JD-zzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3132" y="-260.41979010494754"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="login-palm-tree" width="600" height="566"/>
+    </resources>
 </document>

@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A890D1BDE5CE75E5BC76E71 /* Pods_NewDawn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8C3FC62C0E9BD77DBE0A56 /* Pods_NewDawn.framework */; };
+		7931AA0A1EA7DF0A008DA0BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AA091EA7DF0A008DA0BE /* AppDelegate.swift */; };
+		7931AA0C1EA7DF0A008DA0BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AA0B1EA7DF0A008DA0BE /* ViewController.swift */; };
+		7931AA0F1EA7DF0A008DA0BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931AA0D1EA7DF0A008DA0BE /* Main.storyboard */; };
+		7931AA111EA7DF0A008DA0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7931AA101EA7DF0A008DA0BE /* Assets.xcassets */; };
+		7931AA141EA7DF0A008DA0BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931AA121EA7DF0A008DA0BE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7931AA061EA7DF0A008DA0BE /* NewDawn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewDawn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7931AA091EA7DF0A008DA0BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7931AA0B1EA7DF0A008DA0BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7931AA0E1EA7DF0A008DA0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7931AA101EA7DF0A008DA0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7931AA131EA7DF0A008DA0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7931AA151EA7DF0A008DA0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5025620FA7226FAC61B9B52 /* Pods-NewDawn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewDawn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewDawn/Pods-NewDawn.debug.xcconfig"; sourceTree = "<group>"; };
+		D8B53B5324418AA0907BEFBE /* Pods-NewDawn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewDawn.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewDawn/Pods-NewDawn.release.xcconfig"; sourceTree = "<group>"; };
+		ED8C3FC62C0E9BD77DBE0A56 /* Pods_NewDawn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewDawn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7931AA031EA7DF0A008DA0BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A890D1BDE5CE75E5BC76E71 /* Pods_NewDawn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24E584F6F0420D1ABBA65DE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED8C3FC62C0E9BD77DBE0A56 /* Pods_NewDawn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30E8A6E0BEFE94DE1CD79D2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5025620FA7226FAC61B9B52 /* Pods-NewDawn.debug.xcconfig */,
+				D8B53B5324418AA0907BEFBE /* Pods-NewDawn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7931A9FD1EA7DF0A008DA0BE = {
+			isa = PBXGroup;
+			children = (
+				7931AA081EA7DF0A008DA0BE /* NewDawn */,
+				7931AA071EA7DF0A008DA0BE /* Products */,
+				30E8A6E0BEFE94DE1CD79D2E /* Pods */,
+				24E584F6F0420D1ABBA65DE2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7931AA071EA7DF0A008DA0BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7931AA061EA7DF0A008DA0BE /* NewDawn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7931AA081EA7DF0A008DA0BE /* NewDawn */ = {
+			isa = PBXGroup;
+			children = (
+				7931AA091EA7DF0A008DA0BE /* AppDelegate.swift */,
+				7931AA0B1EA7DF0A008DA0BE /* ViewController.swift */,
+				7931AA0D1EA7DF0A008DA0BE /* Main.storyboard */,
+				7931AA101EA7DF0A008DA0BE /* Assets.xcassets */,
+				7931AA121EA7DF0A008DA0BE /* LaunchScreen.storyboard */,
+				7931AA151EA7DF0A008DA0BE /* Info.plist */,
+			);
+			path = NewDawn;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7931AA051EA7DF0A008DA0BE /* NewDawn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7931AA181EA7DF0A008DA0BE /* Build configuration list for PBXNativeTarget "NewDawn" */;
+			buildPhases = (
+				FF6DD495EF258EA3FDE493C6 /* [CP] Check Pods Manifest.lock */,
+				7931AA021EA7DF0A008DA0BE /* Sources */,
+				7931AA031EA7DF0A008DA0BE /* Frameworks */,
+				7931AA041EA7DF0A008DA0BE /* Resources */,
+				E7E1163DC85499BAE6F29C44 /* [CP] Embed Pods Frameworks */,
+				D9B0B61DA9EADE752DF3298E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewDawn;
+			productName = NewDawn;
+			productReference = 7931AA061EA7DF0A008DA0BE /* NewDawn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7931A9FE1EA7DF0A008DA0BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ChristopherMoore;
+				TargetAttributes = {
+					7931AA051EA7DF0A008DA0BE = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 6W97WT4N63;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7931AA011EA7DF0A008DA0BE /* Build configuration list for PBXProject "NewDawn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7931A9FD1EA7DF0A008DA0BE;
+			productRefGroup = 7931AA071EA7DF0A008DA0BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7931AA051EA7DF0A008DA0BE /* NewDawn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7931AA041EA7DF0A008DA0BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7931AA141EA7DF0A008DA0BE /* LaunchScreen.storyboard in Resources */,
+				7931AA111EA7DF0A008DA0BE /* Assets.xcassets in Resources */,
+				7931AA0F1EA7DF0A008DA0BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D9B0B61DA9EADE752DF3298E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewDawn/Pods-NewDawn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7E1163DC85499BAE6F29C44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewDawn/Pods-NewDawn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF6DD495EF258EA3FDE493C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7931AA021EA7DF0A008DA0BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7931AA0C1EA7DF0A008DA0BE /* ViewController.swift in Sources */,
+				7931AA0A1EA7DF0A008DA0BE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7931AA0D1EA7DF0A008DA0BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7931AA0E1EA7DF0A008DA0BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7931AA121EA7DF0A008DA0BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7931AA131EA7DF0A008DA0BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7931AA161EA7DF0A008DA0BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7931AA171EA7DF0A008DA0BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7931AA191EA7DF0A008DA0BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5025620FA7226FAC61B9B52 /* Pods-NewDawn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6W97WT4N63;
+				INFOPLIST_FILE = NewDawn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.NewDawn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7931AA1A1EA7DF0A008DA0BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B53B5324418AA0907BEFBE /* Pods-NewDawn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6W97WT4N63;
+				INFOPLIST_FILE = NewDawn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.NewDawn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7931AA011EA7DF0A008DA0BE /* Build configuration list for PBXProject "NewDawn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7931AA161EA7DF0A008DA0BE /* Debug */,
+				7931AA171EA7DF0A008DA0BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7931AA181EA7DF0A008DA0BE /* Build configuration list for PBXNativeTarget "NewDawn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7931AA191EA7DF0A008DA0BE /* Debug */,
+				7931AA1A1EA7DF0A008DA0BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7931A9FE1EA7DF0A008DA0BE /* Project object */;
+}
